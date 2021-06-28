@@ -1,0 +1,16 @@
+.container .title{
+  color:gray;
+  font-size:30rpx;
+}
+.basic{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:40rpx;
+}
+.basic view{
+  border: 1px solid;
+  border-radius: 30rpx;
+  padding:8rpx;
+  font-size:30rpx;
+}

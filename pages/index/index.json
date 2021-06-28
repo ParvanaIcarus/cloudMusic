@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "indexNav": "/components/index-nav/index-nav"
+  },
+  "navigationBarTitleText": "網易雲音樂"
+}

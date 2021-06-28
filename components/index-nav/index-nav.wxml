@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="title">{{title}}</view>
+  <view class='basic'>
+    <text>為你精心推薦</text>
+    <view>查看更多</view>
+  </view>
+</view>

@@ -1,0 +1,91 @@
+.indexSwiper{
+  height:400rpx;
+}
+.indexSwiper .swiperItem{
+  height:100%;
+}
+.indexSwiper .swiperItem image{
+  width:100%;
+  height:100%;
+}
+.contant_Icon{
+  margin-top:20rpx;
+  display: flex;
+}
+.contant_Icon .item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex:1;
+}
+.contant_Icon .item text{
+  font-size:30rpx;
+}
+.contant_Icon .iconfont{
+  background-color: #D03B30;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 50%;
+  width:100rpx;
+  height:100rpx;
+  color:#fff;
+  font-size:42rpx;
+}
+.recommend,.top{
+  padding:15rpx;
+}
+.recommend{
+  height:400rpx;
+  margin-top:30rpx;
+}
+.rec_Scroll{
+  height:400rpx;
+  padding-top:10rpx;
+  display: flex;
+}
+.rec_Scroll view{
+  height:100%;
+  margin-right:20rpx;
+}
+.rec_Scroll text{
+  font-size: 26rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.rec_Scroll image{
+  border-radius: 20rpx;
+  width:200rpx;
+  height:200rpx;
+}
+.top{
+  height:500rpx;
+}
+.top .content{
+  margin-top:20rpx;
+  height:440rpx;
+}
+
+.item .child {
+  margin-top: 20rpx;
+ display: flex;
+ align-items: center;
+}
+.item .child image{
+  margin-right:20rpx;
+  width:100rpx;
+  height:100rpx;
+}
+.item .child text{
+  padding:0 20rpx;
+}
+.item .child view{
+  width:380rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

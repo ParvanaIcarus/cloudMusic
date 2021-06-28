@@ -1,0 +1,3 @@
+/**app.wxss**/
+/* 導入字體圖標 */
+@import './static/iconfont/iconfont.wxss'
