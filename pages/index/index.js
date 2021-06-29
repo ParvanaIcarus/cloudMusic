@@ -33,7 +33,6 @@ Page({
     let { name, tracks } = playlist
     this.data.topList.push({ name, tracks: tracks.slice(0, 3), id: i })
     this.setData({ topList: this.data.topList })
-    console.log(this.data.topList)
   },
   /**
    * 生命周期函数--监听页面加载

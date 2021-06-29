@@ -46,7 +46,7 @@
         <text class="title">{{item.name}}></text>
         <view wx:for="{{item.tracks}}" wx:for-item="citem" wx:for-index="cindex" wx:key="id" class="child">
           <image src="{{citem.al.picUrl}}" />
-          <text>{{cindex}}</text>
+          <text>{{cindex + 1}}</text>
           <view>{{citem.name}}</view>
         </view>
       </swiper-item>

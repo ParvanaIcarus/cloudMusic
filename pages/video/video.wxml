@@ -1,1 +1,28 @@
-<view class="container">視屏</view>
+<view class="videoContent">
+  <!-- 搜索 -->
+  <view class="header">
+    <image src="/static/images/video/video.jpg" />
+    <view class="search">光辉岁月</view>
+    <image src="/static/images/logo.png" />
+  </view>
+  <!-- 導航條 -->
+  <scroll-view scroll-x enable-flex class="NavScroll" scroll-with-animation scroll-into-view='{{"s"+groupId}}'>
+    <view class="ScrollItem {{item.id == groupId ? 'active' : ''}}" id="{{'s'+item.id}}" wx:for="{{groupList}}" wx:key="id" bindtap='NavItemTap' data-id='{{item.id}}'>
+      <text>{{item.name}}</text>
+    </view>
+  </scroll-view>
+  <!-- 相應的視頻 -->
+  <scroll-view class="ScrollVideo" scroll-y>
+    <view class="VideoItem" wx:for="{{groupVideo}}" wx:key="id">
+      <video class="MatchVideo" autoplay wx:if="{{playVideoId == item.id}}" src="{{item.data.urlInfo.url}}" object-fit="fill" />
+      <image class="MatchVideo" wx:else bindtap="videoPlay" data-id="{{item.id}}" src="{{item.data.coverUrl}}" />
+      <text>{{item.data.title}}</text>
+      <!-- <view>
+        <view class="left">
+          <image />
+        </view>
+        <view class="right"></view>
+      </view> -->
+    </view>
+  </scroll-view>
+</view>

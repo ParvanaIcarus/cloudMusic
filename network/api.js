@@ -24,3 +24,25 @@ export const reqTopList = (idx) =>
       idx,
     },
   })
+
+// 手機號登錄
+export const reqLogin = (phone, password) =>
+  request({
+    url: '/login/cellphone',
+    data: { phone, password },
+  })
+
+// 獲取視屏標籤列表 /video/group/list
+export const reqGroupList = () =>
+  request({
+    url: '/video/group/list',
+  })
+
+// 獲取視頻標籤對應ID的視頻 /video/group
+export const reqGroupVideo = (id) =>
+  request({
+    url: '/video/group',
+    data: {
+      id,
+    },
+  })
